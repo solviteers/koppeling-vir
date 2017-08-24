@@ -1,0 +1,122 @@
+<zak:zakLk01 xmlns:bg="http://www.egem.nl/StUF/sector/bg/0310" xmlns:gml="http://www.opengis.net/gml" xmlns:stuf="http://www.egem.nl/StUF/StUF0301" xmlns:xlin="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zak="http://www.egem.nl/StUF/sector/zkn/0310">
+    <zak:stuurgegevens>
+        <stuf:berichtcode>Lk01</stuf:berichtcode>
+        <stuf:zender>
+            <stuf:organisatie>0123</stuf:organisatie>
+            <stuf:applicatie>WIZportaal</stuf:applicatie>
+            <stuf:gebruiker>kees</stuf:gebruiker>
+        </stuf:zender>
+        <stuf:ontvanger>
+            <stuf:organisatie>0987</stuf:organisatie>
+            <stuf:applicatie>VIR-Broker</stuf:applicatie>
+        </stuf:ontvanger>
+        <stuf:referentienummer>ref-jyp-201708241750</stuf:referentienummer>
+        <stuf:tijdstipBericht>201708241750</stuf:tijdstipBericht>
+        <stuf:entiteittype>ZAK</stuf:entiteittype>
+    </zak:stuurgegevens>
+    <zak:parameters>
+        <stuf:mutatiesoort>T</stuf:mutatiesoort>
+        <stuf:indicatorOvername>V</stuf:indicatorOvername>
+    </zak:parameters>
+    <zak:object stuf:entiteittype="ZAK" stuf:sleutelVerzendend="[signaal sleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
+        <zak:identificatie stuf:noValue="geenWaarde" xsi:nil="true"/>
+        <!-- Organisatie die VIR-signaal inschiet: -->
+        <zak:omschrijving>Gemeente De Bosrand</zak:omschrijving>
+        <!-- Kenmerk: Relatie naar registratie in gekoppelde systeem -->
+        <zak:kenmerk>
+            <!-- Optionele WmoReferentie VIR -->
+            <zak:kenmerk>[signaal sleutel/guid]</zak:kenmerk>
+            <zak:bron>WIZportaal</zak:bron>
+        </zak:kenmerk>
+        <!-- Datum waarop de melding wordt/is gedaan, formaat: YYYYMMDD -->
+        <zak:startdatum>20170804</zak:startdatum>
+        <!-- Datum waarop de melding geregistreerd is, in de praktijk identiek aan startdatum-->
+        <zak:registratiedatum>20170804</zak:registratiedatum>
+        <!-- Einddatum/AfloopDatum, startdatum + 2 jaar, of datum -1 waarop de client 23 wordt-->
+        <zak:einddatum>20190831</zak:einddatum>
+        <stuf:tijdvakGeldigheid>
+            <!-- Datum van registratie. Format: YYYYMMDD -->
+            <stuf:beginGeldigheid>20170804</stuf:beginGeldigheid>
+            <stuf:eindGeldigheid stuf:noValue="geenWaarde" xsi:nil="true"/>
+        </stuf:tijdvakGeldigheid>
+        <!-- Tijdstip van registratie. Format: YYYYMMDDHHMMSS -->
+        <stuf:tijdstipRegistratie>20170804185424</stuf:tijdstipRegistratie>
+        <stuf:extraElementen>
+            <!-- Klantnummer lokale instantie in VIR-Broker -->
+            <stuf:extraElement naam="aortaKlantnummer">klantnr201425</stuf:extraElement>
+        </stuf:extraElementen>
+        <!-- Type melding -->
+        <zak:isVan stuf:entiteittype="ZAKZKT" stuf:verwerkingssoort="T">
+            <zak:gerelateerde stuf:entiteittype="ZKT" stuf:verwerkingssoort="T">
+                <!--Omschrijving type melding-->
+                <zak:omschrijving>Verwijsindex risicojeugd</zak:omschrijving>
+                <!--Code van type melding-->
+                <zak:code>VIR</zak:code>
+                <zak:ingangsdatumObject xsi:nil="true"/>
+            </zak:gerelateerde>
+        </zak:isVan>
+        <!--Clientgegevens-->
+        <zak:heeftBetrekkingOp stuf:entiteittype="ZAKOBJ" stuf:verwerkingssoort="T">
+            <zak:gerelateerde>
+                <zak:natuurlijkPersoon stuf:entiteittype="NPS" stuf:sleutelVerzendend="[client sleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
+                    <!-- BSN Client: -->
+                    <bg:inp.bsn>123456781</bg:inp.bsn>
+                    <!-- Achternaam : -->
+                    <bg:geslachtsnaam>Vries</bg:geslachtsnaam>
+                    <!-- Voorvoegsel achternaam: -->
+                    <bg:voorvoegselGeslachtsnaam>de</bg:voorvoegselGeslachtsnaam>
+                    <!-- Voornamen: -->
+                    <bg:voornamen>Maarten</bg:voornamen>
+                    <!-- Geslacht [M,V,O]: -->
+                    <bg:geslachtsaanduiding>M</bg:geslachtsaanduiding>
+                    <!-- Geboortedatum, format: YYYYMMDD: -->
+                    <bg:geboortedatum>20021023</bg:geboortedatum>
+                    <bg:verblijfsadres>
+                        <bg:wpl.woonplaatsNaam>aeolus antro</bg:wpl.woonplaatsNaam>
+                        <!-- Straatnaam: -->
+                        <bg:gor.openbareRuimteNaam>flammas turbine</bg:gor.openbareRuimteNaam>
+                        <!-- Postcode, format: AAAANN: -->
+                        <bg:aoa.postcode>1324AB</bg:aoa.postcode>
+                        <bg:aoa.huisnummer>201</bg:aoa.huisnummer>
+                        <bg:aoa.huisletter>A</bg:aoa.huisletter>
+                        <bg:aoa.huisnummertoevoeging>bis</bg:aoa.huisnummertoevoeging>
+                    </bg:verblijfsadres>
+                </zak:natuurlijkPersoon>
+            </zak:gerelateerde>
+        </zak:heeftBetrekkingOp>
+        <!-- Professional/Signalerend persoon (hulpverlener) -->
+        <zak:heeftAlsInitiator stuf:entiteittype="ZAKBTRINI" stuf:verwerkingssoort="T">
+            <zak:gerelateerde>
+                <zak:medewerker stuf:entiteittype="MDW" stuf:sleutelVerzendend="[gebruiker sleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
+                    <!-- Medewerkercode in regionale VIR -->
+                    <zak:identificatie>2348beverum</zak:identificatie>
+                </zak:medewerker>
+            </zak:gerelateerde>
+            <stuf:extraElementen>
+                <!-- In het geval er naast de username er ook een secret accesstoken nodig is -->
+                <stuf:extraElement naam="secret">vornum dante</stuf:extraElement>
+                <!-- Telefoonnummer signalerend persoon lokale instantie -->
+                <stuf:extraElement naam="telefoonnummer">0698769876</stuf:extraElement>
+                <!-- E-mailadres signalerend persoon lokale instantie -->
+                <stuf:extraElement naam="emailadres">2348beverum@example.com</stuf:extraElement>
+            </stuf:extraElementen>
+        </zak:heeftAlsInitiator>
+        <!-- Professional/Contactpersoon (melding coördinator) -->
+        <zak:heeftAlsVerantwoordelijke stuf:entiteittype="ZAKBTRVRA" stuf:verwerkingssoort="T">
+            <zak:gerelateerde>
+                <zak:medewerker stuf:entiteittype="MDW" stuf:sleutelVerzendend="[gebruiker sleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
+                    <!--Medewerkercode in regionale VIR -->
+                    <zak:identificatie>2348sonoras</zak:identificatie>
+                </zak:medewerker>
+            </zak:gerelateerde>
+            <stuf:extraElementen>
+                <!--In het geval er naast de username er ook een secret accesstoken nodig is -->
+                <stuf:extraElement naam="secret">venit hic</stuf:extraElement>
+                <!-- Telefoonnummer contactpersoon lokale instantie -->
+                <stuf:extraElement naam="telefoonnummer">061234134</stuf:extraElement>
+                <!-- E-mailadres contactpersoon lokale instantie -->
+                <stuf:extraElement naam="emailadres">2348sonoras@example.com</stuf:extraElement>
+            </stuf:extraElementen>
+        </zak:heeftAlsVerantwoordelijke>
+    </zak:object>
+</zak:zakLk01>
