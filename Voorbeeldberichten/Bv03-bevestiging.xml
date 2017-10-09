@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bv03Bericht xmlns="http://www.egem.nl/StUF/StUF0301">
+    <stuurgegevens>
+        <berichtcode>Bv03</berichtcode>
+        <zender>
+            <organisatie>0987</organisatie>
+            <applicatie>VIR-Broker</applicatie>
+        </zender>
+        <ontvanger>
+            <organisatie>0123</organisatie>
+            <applicatie>WIZportaal</applicatie>
+        </ontvanger>
+        <!-- Unieke referentie van dit Bv03-bericht -->
+        <referentienummer>4477758</referentienummer>
+        <tijdstipBericht>2017041810083154</tijdstipBericht>
+        <!-- referentienummer van het bericht waar deze Bv03 een reactie op is -->
+        <crossRefnummer>61903f84-59b9-4381-b3e4-089d48b7f6ee</crossRefnummer>
+    </stuurgegevens>
+</Bv03Bericht>

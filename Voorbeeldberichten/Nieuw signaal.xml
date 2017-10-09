@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <zak:zakLk01 xmlns:bg="http://www.egem.nl/StUF/sector/bg/0310" xmlns:gml="http://www.opengis.net/gml" xmlns:stuf="http://www.egem.nl/StUF/StUF0301" xmlns:xlin="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zak="http://www.egem.nl/StUF/sector/zkn/0310">
     <zak:stuurgegevens>
         <stuf:berichtcode>Lk01</stuf:berichtcode>
@@ -19,13 +20,14 @@
         <stuf:indicatorOvername>V</stuf:indicatorOvername>
     </zak:parameters>
     <zak:object stuf:entiteittype="ZAK" stuf:sleutelVerzendend="[signaal sleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
+        <!-- Signaal nummer uit de Landelijke VIR, is leeg bij nieuw signaal vanuit lokale instantie -->
         <zak:identificatie stuf:noValue="geenWaarde" xsi:nil="true"/>
         <!-- Organisatie die VIR-signaal inschiet: -->
         <zak:omschrijving>Gemeente De Bosrand</zak:omschrijving>
         <!-- Kenmerk: Relatie naar registratie in gekoppelde systeem -->
         <zak:kenmerk>
             <!-- Optionele WmoReferentie VIR -->
-            <zak:kenmerk>[signaal sleutel/guid]</zak:kenmerk>
+            <zak:kenmerk>[Signaal nummer uit lokale instantie]</zak:kenmerk>
             <zak:bron>WIZportaal</zak:bron>
         </zak:kenmerk>
         <!-- Datum waarop de melding wordt/is gedaan, formaat: YYYYMMDD -->

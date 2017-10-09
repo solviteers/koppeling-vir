@@ -1,0 +1,37 @@
+<SOAP-ENV:Fault xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <faultcode xmlns:q0="http://www.w3.org/2003/05/soap-envelope">q0:client</faultcode>
+   <faultstring>Combinatie zender en referentienummer niet uniek</faultstring>
+   <detail>
+      <Fo03Bericht xmlns="http://www.egem.nl/StUF/StUF0301">
+         <stuurgegevens>
+            <berichtcode>Fo03</berichtcode>
+            <zender>
+               <organisatie>Gemeente Venlo</organisatie>
+               <applicatie>Zaaksysteem</applicatie>
+            </zender>
+            <ontvanger>
+               <organisatie>00000001001567834000_T</organisatie>
+               <applicatie>WIZportaal</applicatie>
+               <gebruiker>Carl Rijkes</gebruiker>
+            </ontvanger>
+            <!-- Unieke referentie van dit Fo03-bericht -->
+            <referentienummer>jypzds201703021619</referentienummer>
+            <tijdstipBericht>20170703133732422</tijdstipBericht>
+            <!-- referentienummer van het bericht waar deze Fo03 een reactie op is -->
+            <crossRefnummer>20170703133732422</crossRefnummer>
+         </stuurgegevens>
+         <body>
+            <!-- Verplicht: Foutcode van max. 7 karakters. Mag eigen code zijn of standaardcode uit de stuf0301.pdf -->
+            <code>StUF016</code>
+            <!-- Verplicht, enum: [client,server] -->
+            <plek>client</plek>
+            <!-- Fout in Jip-en-Janneke-taal om aan de gebruiker te tonen -->
+            <omschrijving>Combinatie zender en referentienummer niet uniek</omschrijving>
+            <!-- Toelichting op de fout in Jip-en-Janneke-taal, om aan de gebruiker te tonen -->
+            <details></details>
+            <!-- Optioneel: Een in valide xml verpakte technische fout of stacktrace -->
+            <detailsXML></detailsXML>
+         </body>
+      </Fo03Bericht>
+   </detail>
+</SOAP-ENV:Fault>

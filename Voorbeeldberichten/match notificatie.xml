@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Deze match notificatie is op dit moment identiek aan het het bericht: signaal bevestiging -->
+<zak:zakLk01 xmlns:bg="http://www.egem.nl/StUF/sector/bg/0310" xmlns:gml="http://www.opengis.net/gml" xmlns:stuf="http://www.egem.nl/StUF/StUF0301" xmlns:xlin="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zak="http://www.egem.nl/StUF/sector/zkn/0310">
+    <zak:stuurgegevens>
+        <stuf:berichtcode>Lk01</stuf:berichtcode>
+        <stuf:zender>
+            <stuf:organisatie>0987</stuf:organisatie>
+            <stuf:applicatie>VIR-Broker</stuf:applicatie>
+        </stuf:zender>
+        <stuf:ontvanger>
+            <stuf:organisatie>0123</stuf:organisatie>
+            <stuf:applicatie>WIZportaal</stuf:applicatie>
+        </stuf:ontvanger>
+        <stuf:referentienummer>ref-vir-201708241750</stuf:referentienummer>
+        <stuf:tijdstipBericht>201708241750</stuf:tijdstipBericht>
+        <stuf:entiteittype>ZAK</stuf:entiteittype>
+    </zak:stuurgegevens>
+    <zak:parameters>
+        <stuf:mutatiesoort>T</stuf:mutatiesoort>
+        <stuf:indicatorOvername>V</stuf:indicatorOvername>
+    </zak:parameters>
+    <zak:object stuf:entiteittype="ZAK" stuf:sleutelOntvangend="[signaal sleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
+        <!-- Signaal nummer uit de Landelijke VIR -->
+        <zak:identificatie>lkjsdfg987345</zak:identificatie>
+        <!-- Organisatie die VIR-signaal inschiet: -->
+        <zak:omschrijving stuf:noValue="waardeOnbekend" xsi:nil="true"/>
+        <!-- Datum waarop de melding wordt/is gedaan, formaat: YYYYMMDD -->
+        <zak:startdatum>20170804</zak:startdatum>
+        <!-- Datum waarop de melding geregistreerd is, in de praktijk identiek aan startdatum-->
+        <zak:registratiedatum>20170804</zak:registratiedatum>
+        <!-- Einddatum/AfloopDatum, startdatum + 2 jaar, of datum -1 waarop de client 23 wordt-->
+        <zak:einddatum>20190831</zak:einddatum>
+        <stuf:tijdvakGeldigheid>
+            <!-- Datum van registratie. Format: YYYYMMDD -->
+            <stuf:beginGeldigheid>20170804</stuf:beginGeldigheid>
+            <stuf:eindGeldigheid stuf:noValue="geenWaarde" xsi:nil="true"/>
+        </stuf:tijdvakGeldigheid>
+        <!-- Tijdstip van registratie. Format: YYYYMMDDHHMMSS -->
+        <stuf:tijdstipRegistratie>20170804185424</stuf:tijdstipRegistratie>
+        <stuf:extraElementen>
+            <!-- Optioneel: Klantnummer lokale instantie in VIR-Broker -->
+            <stuf:extraElement naam="aortaKlantnummer">klantnr201425</stuf:extraElement>
+        </stuf:extraElementen>
+        <!-- Type melding -->
+        <zak:isVan stuf:entiteittype="ZAKZKT" stuf:verwerkingssoort="T">
+            <zak:gerelateerde stuf:entiteittype="ZKT" stuf:verwerkingssoort="T">
+                <!--Omschrijving type melding-->
+                <zak:omschrijving>Verwijsindex risicojeugd</zak:omschrijving>
+                <!--Code van type melding-->
+                <zak:code>VIR</zak:code>
+                <zak:ingangsdatumObject xsi:nil="true"/>
+            </zak:gerelateerde>
+        </zak:isVan>
+        <!-- Matches vanuit de VIR, per match een heeftBetrekkingOpAndere-element: -->
+        <zak:heeftBetrekkingOpAndere stuf:entiteittype="ZAKZAKBTR" stuf:verwerkingssoort="T">
+            <zak:gerelateerde stuf:entiteittype="ZAK" stuf:verwerkingssoort="T">
+                <!-- gematchte VIR signaalnummer -->
+                <zak:identificatie>luctantis ventos</zak:identificatie>
+                <!-- VIR aanvrager organisatie: -->
+                <zak:omschrijving>altos imposuit regemque</zak:omschrijving>
+                <zak:isVan stuf:entiteittype="ZAKZKT" stuf:verwerkingssoort="T">
+                    <zak:gerelateerde stuf:entiteittype="ZKT" stuf:verwerkingssoort="T">
+                        <!--Omschrijving type melding-->
+                        <zak:omschrijving>Verwijsindex risicojeugd</zak:omschrijving>
+                        <!--Code van type melding-->
+                        <zak:code>VIR</zak:code>
+                        <zak:ingangsdatumObject xsi:nil="true"/>
+                    </zak:gerelateerde>
+                </zak:isVan>
+            </zak:gerelateerde>
+            <!-- Start en einddatum signaal: -->
+            <stuf:tijdvakRelatie>
+                <!-- startdatum signaal, format: YYYYMMDD -->
+                <stuf:beginRelatie>20170721</stuf:beginRelatie>
+                <!-- optioneel, einddatum signaal, format: YYYYMMDD -->
+                <stuf:eindRelatie>20170921</stuf:eindRelatie>
+            </stuf:tijdvakRelatie>
+            <stuf:extraElementen>
+                <!-- Contactpersoon matchende melding: -->
+                <stuf:extraElement naam="contactpersoon">venit hic</stuf:extraElement>
+                <stuf:extraElement naam="telefoonnummer">venit hic</stuf:extraElement>
+                <stuf:extraElement naam="emailadres">venit hic</stuf:extraElement>
+            </stuf:extraElementen>
+        </zak:heeftBetrekkingOpAndere>
+    </zak:object>
+</zak:zakLk01>
