@@ -24,6 +24,6 @@ Een mutatie of een nieuw signaal is te herkennen aan de combinatie van de elemen
 | --- | --- | --- | --- |
 | Nieuw signaal | <zak:identificatie stuf:noValue="geenWaarde" xsi:nil="true"/> | `stuf:sleutelVerzendend="[signaalsleutel/guid lokale instantie]"` | De explicite declaratie van `noValue="geenWaarde"` informeert de VIR-broker over het nieuwe signaal|
 | Bevestiging registratie nieuw signaal in landelijke VIR | <zak:identificatie>[valide VIR-signaalnummer]</zak:identificatie> | `stuf:sleutelOntvangend="[signaalsleutel/guid lokale instantie]"` | De bevestiging vanuit de VIR-broker bevat de sleutel van het signaal in de lokale instantie zodat het VIR-signaalnummer gekoppeld kan worden aan het aangemaakte signaal |
-| Mutatie | <zak:identificatie>[valide VIR-signaalnummer]</zak:identificatie> | Mutaties bevatten alleen een VIR-signaalnummer, geen sleutel uit het lokale systeem. Mutaties worden geinitieerd vanuit de landelijke VIR, die heeft geen kennis van lokale sleutelnummers |
+| Mutatie | <zak:identificatie>[valide VIR-signaalnummer]</zak:identificatie> | | Mutaties bevatten alleen een VIR-signaalnummer, geen sleutel uit het lokale systeem. Mutaties worden geinitieerd vanuit de landelijke VIR, die heeft geen kennis van lokale sleutelnummers |
 
 
