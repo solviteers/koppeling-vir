@@ -3,6 +3,7 @@
     <zak:stuurgegevens>
         <stuf:berichtcode>Lk01</stuf:berichtcode>
         <stuf:zender>
+            <!-- Klantnummer lokale instantie in VIR-Broker -->
             <stuf:organisatie>0987</stuf:organisatie>
             <stuf:applicatie>VIR-Broker</stuf:applicatie>
         </stuf:zender>
@@ -36,10 +37,6 @@
         </stuf:tijdvakGeldigheid>
         <!-- Tijdstip van registratie. Format: YYYYMMDDHHMMSS -->
         <stuf:tijdstipRegistratie>20170804185424</stuf:tijdstipRegistratie>
-        <stuf:extraElementen>
-            <!-- Optioneel: Klantnummer lokale instantie in VIR-Broker -->
-            <stuf:extraElement naam="aortaKlantnummer">klantnr201425</stuf:extraElement>
-        </stuf:extraElementen>
         <!-- Type melding -->
         <zak:isVan stuf:entiteittype="ZAKZKT" stuf:verwerkingssoort="T">
             <zak:gerelateerde stuf:entiteittype="ZKT" stuf:verwerkingssoort="T">
@@ -55,7 +52,7 @@
             <zak:gerelateerde stuf:entiteittype="ZAK" stuf:verwerkingssoort="T">
                 <!-- gematchte VIR signaalnummer -->
                 <zak:identificatie>luctantis ventos</zak:identificatie>
-                <!-- VIR aanvrager organisatie: -->
+                <!-- Organisatie van indiener gematcht signaal: -->
                 <zak:omschrijving>altos imposuit regemque</zak:omschrijving>
                 <zak:isVan stuf:entiteittype="ZAKZKT" stuf:verwerkingssoort="T">
                     <zak:gerelateerde stuf:entiteittype="ZKT" stuf:verwerkingssoort="T">

@@ -119,7 +119,43 @@
                 <stuf:extraElement naam="telefoonnummer">061234134</stuf:extraElement>
                 <!-- E-mailadres contactpersoon lokale instantie -->
                 <stuf:extraElement naam="emailadres">2348sonoras@example.com</stuf:extraElement>
+                <stuf:extraElement naam="indicatieCoordinator">false</stuf:extraElement>
             </stuf:extraElementen>
         </zak:heeftAlsVerantwoordelijke>
+        <!-- Matches vanuit de VIR, per match een heeftBetrekkingOpAndere-element: -->
+        <zak:heeftBetrekkingOpAndere stuf:entiteittype="ZAKZAKBTR" stuf:verwerkingssoort="T">
+            <zak:gerelateerde stuf:entiteittype="ZAK" stuf:verwerkingssoort="T">
+                <!-- gematchte VIR signaalnummer -->
+                <zak:identificatie>luctantis ventos</zak:identificatie>
+                <!-- VIR aanvrager organisatie: -->
+                <zak:omschrijving>altos imposuit regemque</zak:omschrijving>
+                <zak:isVan stuf:entiteittype="ZAKZKT" stuf:verwerkingssoort="T">
+                    <zak:gerelateerde stuf:entiteittype="ZKT" stuf:verwerkingssoort="T">
+                        <!--Omschrijving type melding-->
+                        <zak:omschrijving>Verwijsindex risicojeugd</zak:omschrijving>
+                        <!--Code van type melding-->
+                        <zak:code>VIR</zak:code>
+                        <zak:ingangsdatumObject xsi:nil="true"/>
+                    </zak:gerelateerde>
+                </zak:isVan>
+            </zak:gerelateerde>
+            <!-- Start en einddatum signaal: -->
+            <stuf:tijdvakRelatie>
+                <!-- startdatum signaal, format: YYYYMMDD -->
+                <stuf:beginRelatie>20170721</stuf:beginRelatie>
+                <!-- optioneel, einddatum signaal, format: YYYYMMDD -->
+                <stuf:eindRelatie>20170921</stuf:eindRelatie>
+            </stuf:tijdvakRelatie>
+            <stuf:extraElementen>
+                <!-- Contactpersoon matchende melding: -->
+                <stuf:extraElement naam="contactpersoon">venit hic</stuf:extraElement>
+                <stuf:extraElement naam="telefoonnummer">venit hic</stuf:extraElement>
+                <stuf:extraElement naam="emailadres">venit hic</stuf:extraElement>
+                <stuf:extraElement naam="indicatieAfgestemd">true</stuf:extraElement>
+                <!-- Kan alleen door VIR-broker worden aangeleverd, kan niet door lokale instantie ingesteld worden
+                    Kan alleen door lokale instantie ingesteld worden voor het element heeftAlsVerantwoordelijke -->
+                <stuf:extraElement naam="indicatieCoordinator">false</stuf:extraElement>
+            </stuf:extraElementen>
+        </zak:heeftBetrekkingOpAndere>
     </zak:object>
 </zak:zakLk01>
