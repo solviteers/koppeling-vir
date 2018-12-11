@@ -71,11 +71,6 @@
                     <!-- Geboortedatum, format: YYYYMMDD: -->
                     <bg:geboortedatum>20021023</bg:geboortedatum>
                     <bg:verblijfsadres>
-                        <!-- @todo: wat doet de vir met woonplaats? -->
-                        <!-- <bg:wpl.woonplaatsNaam>aeolus antro</bg:wpl.woonplaatsNaam> -->
-                        <!-- Straatnaam: -->
-                        <!-- @todo: wat doet de vir met straatnaam? -->
-                        <!-- <bg:gor.openbareRuimteNaam>flammas turbine</bg:gor.openbareRuimteNaam> -->
                         <!-- Postcode, format: AAAANN: -->
                         <bg:aoa.postcode>1324AB</bg:aoa.postcode>
                         <bg:aoa.huisnummer>201</bg:aoa.huisnummer>

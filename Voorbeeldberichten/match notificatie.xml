@@ -80,6 +80,11 @@
                 <stuf:extraElement naam="contactpersoon">venit hic</stuf:extraElement>
                 <stuf:extraElement naam="telefoonnummer">venit hic</stuf:extraElement>
                 <stuf:extraElement naam="emailadres">venit hic</stuf:extraElement>
+                <!-- Multisignaal functionaliteit: Status afstemming kan de volgende waarden bevatten: [ja, nee, nvt] -->
+                <stuf:extraElement naam="statusAfstemming">nee</stuf:extraElement>
+                <!-- Kan alleen door VIR-broker worden aangeleverd, kan niet door lokale instantie ingesteld worden
+                    Kan alleen door lokale instantie ingesteld worden voor het element heeftAlsVerantwoordelijke -->
+                <stuf:extraElement naam="indicatieCoordinator">false</stuf:extraElement>
             </stuf:extraElementen>
         </zak:heeftBetrekkingOpAndere>
     </zak:object>

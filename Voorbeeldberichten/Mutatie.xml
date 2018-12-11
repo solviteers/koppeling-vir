@@ -21,8 +21,8 @@
         <stuf:indicatorOvername>V</stuf:indicatorOvername>
     </zak:parameters>
     <zak:object stuf:entiteittype="ZAK" stuf:sleutelVerzendend="[signaalsleutel/guid lokale instantie]" stuf:verwerkingssoort="T">
-        <!-- Signaal nummer uit de Landelijke VIR, is leeg bij nieuw signaal vanuit lokale instantie -->
-        <zak:identificatie stuf:noValue="geenWaarde" xsi:nil="true"/>
+        <!-- Signaal nummer uit de Landelijke VIR -->
+        <zak:identificatie>lkjsdfg987345</zak:identificatie>
         <!-- Organisatie die VIR-signaal inschiet: -->
         <zak:omschrijving>Gemeente De Bosrand</zak:omschrijving>
         <!-- Kenmerk: Relatie naar registratie in gekoppelde systeem -->
@@ -151,6 +151,9 @@
                 <stuf:extraElement naam="contactpersoon">venit hic</stuf:extraElement>
                 <stuf:extraElement naam="telefoonnummer">venit hic</stuf:extraElement>
                 <stuf:extraElement naam="emailadres">venit hic</stuf:extraElement>
+                <!-- Multisignaal functionaliteit: Status afstemming kan de volgende waarden bevatten: [ja, nee, nvt] -->
+                <stuf:extraElement naam="statusAfstemming">nee</stuf:extraElement>
+                <!-- 2018-12-11 Ondersteuning voor indicatieAfgestemd komt te vervallen -->
                 <stuf:extraElement naam="indicatieAfgestemd">true</stuf:extraElement>
                 <!-- Kan alleen door VIR-broker worden aangeleverd, kan niet door lokale instantie ingesteld worden
                     Kan alleen door lokale instantie ingesteld worden voor het element heeftAlsVerantwoordelijke -->
